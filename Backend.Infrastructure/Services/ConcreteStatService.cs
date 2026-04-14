@@ -1,17 +1,9 @@
 ﻿using Backend.Models.DTOs;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace Backend;
 
 public class ConcreteStatService : IStatService
 {
-    public ConcreteStatService()
-    {
-            
-    }
-
     public IEnumerable<CountryPopulationDTO>? GetCountryPopulations()
     {
         //returning objects instead of a dictionary because data is usually automatically casted when deserialised from an api response
