@@ -38,7 +38,7 @@ namespace Backend.Repositories
                 IEnumerable<CountryPopulationDTO> result;
                 if (connection == null)
                 {
-                    _logger.LogError("Failed to establish a connection to the database", [_countryConnectionString]);
+                    _logger.LogError("Failed to establish a connection to the database, Connection string: {ConnectionString}", _countryConnectionString);
                     return null;
                 }
 
